@@ -15,10 +15,11 @@ int main()
 {
 
     Window window;
-    Vulkan vulkan;
+    Vulkan vulkan(&window);
 
     while(!window.ShouldClose()) {
         glfwPollEvents();
+        vulkan.Draw();
     }
 
     return 0;

@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 
 #include <glfw/glfw3.h>
@@ -17,4 +19,6 @@ public:
 
 private:
     GLFWwindow* m_pWindow;
+
+    friend class Vulkan;
 };
